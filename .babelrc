@@ -1,0 +1,59 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/env"
+  ],
+  "plugins":[
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-logical-assignment-operators",
+    ["@babel/plugin-proposal-optional-chaining", { "loose": false }],
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    ["@babel/plugin-proposal-nullish-coalescing-operator", { "loose": false }],
+    "@babel/plugin-proposal-do-expressions",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/proposal-class-properties",
+    ["import", {
+      "libraryName": "antd-mobile",
+      // "libraryDirectory": "es",
+      "style": true // `style: true` 会加载 less 文件
+    }]
+  ],
+  "env": {
+    "browser": {
+      "presets": [
+        [
+          "env", {
+            "targets": {
+              "browsers": ["last 2 versions", "safari >= 7"]
+            }
+          }
+        ]
+      ]
+    },
+    "node": {
+      "presets": [
+        [
+          "env", {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
+
+
+// module.exports = function() {
+//   return {
+//     plugins: [
+//       require("@babel/plugin-syntax-dynamic-import"),
+//       [require("@babel/plugin-proposal-decorators"), { "legacy": true }],
+//       [require("@babel/plugin-proposal-class-properties"), { "loose": false }],
+//     ],
+//     presets: [
+//       // ...
+//     ],
+//   };
+// };

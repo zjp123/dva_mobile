@@ -1,0 +1,19 @@
+
+  {"code":"1","msg":"success",
+            "data":{"pageNum":3,"pageSize":534,"totalPages":3,"totalCount":514,
+            "items":[{
+              "companyName":"ddd","orderTime":"2020/12/12",
+              "rewardAmount":800,"bizTypeName":"秒贴","rewardTypeName":"基础奖励"
+            },
+            {
+              "companyName":"skksdkrrr","orderTime":"2020/12/12",
+              "rewardAmount":60000,"bizTypeName":"秒贴营销活动","rewardTypeName":"新用户首笔交易奖励"
+            },{
+                "companyName":"dddyyy","orderTime":"2020/12/12",
+                "rewardAmount":800,"bizTypeName":"秒贴","rewardTypeName":"基础奖励"
+              },
+              {
+                "companyName":"sk666ksdk","orderTime":"2020/12/12",
+                "rewardAmount":60000,"bizTypeName":"秒贴营销活动","rewardTypeName":"新用户首笔交易奖励"
+              }
+            ]}}
